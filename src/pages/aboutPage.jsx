@@ -3,6 +3,7 @@ import { ShortInfo } from "../components/aboutPage/short_info/ShortInfo";
 import { AboutMap } from "../components/aboutPage/about_map/AboutMap";
 import { Delivery } from "../components/delivery/Delivery";
 import { Production } from "../components/production/Production";
+import { PartnerInlineForm } from "../components/partner_inline_form/PartterInlineForm";
 export const AboutPage = () => {
     return (
         <>
@@ -11,6 +12,7 @@ export const AboutPage = () => {
             <AboutMap />
             <Delivery />
             <Production />
+            <PartnerInlineForm />
         </>
     );
 }
