@@ -1,26 +1,26 @@
 export const ShortInfo = () => {
     return (
         <section>
-            <div class="container">
-                <div class="block_short_info">
-                    <div class="left_block">
+            <div className="container">
+                <div className="block_short_info">
+                    <div className="left_block">
                         <h2>О нас</h2>
                         <p>GoodCup это — 1500 кв. м. производственных площадей, на которых мы ежедневно выпускаем 2 500 000 бумажных стаканчиков, фасуем 2000 кг сахара в стики, изготавливаем капхолдеры для однослойных бумажных стаканов для горячих напитков!</p>
                     </div>
-                    <div class="right_block bg_light">
+                    <div className="right_block bg_light">
                         <h2>Собственная типография обеспечивает 100% переработку сырья </h2>
                         <hr />
                         <ul>
                             <li>
-                                <div class="count">4500</div>
+                                <div className="count">4500</div>
                                 <p>квадратных метров складских площадей</p>
                             </li>
                             <li>
-                                <div class="count">450 – 600</div>
+                                <div className="count">450 – 600</div>
                                 <p>ежедневно отгружаемых заказов в разные города России</p>
                             </li>
                             <li>
-                                <div class="count">2 500 000</div>
+                                <div className="count">2 500 000</div>
                                 <p>бумажных стаканчиков выпускаем ежедневно </p>
                             </li>
                         </ul>
