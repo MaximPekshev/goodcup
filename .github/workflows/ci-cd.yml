@@ -12,13 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-        run: npm install
-
       - name: Build application
         run: npm run build
 
-      - name: Upload production build artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./dist # Path to your built application
+      # - name: Upload production build artifact
+      #   uses: actions/upload-pages-artifact@v4
+      #   with:
+      #     path: ./dist # Path to your built application
