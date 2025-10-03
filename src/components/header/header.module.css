@@ -1,0 +1,44 @@
+.as_header_catalog_btn {
+    background-color: #28a745;
+    border-radius: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 12px;
+    transition: opacity 250ms ease-out;
+}
+
+.as_header_catalog_btn:hover {
+    opacity: 0.8;
+    transition: opacity 250ms ease-out;
+}
+
+.as_header_catalog_btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+.as_burger {
+    border: none;
+	background-color: #28a745;
+    border-radius: 14px;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 12px;
+	display: none;
+}
+
+.as_burger svg {
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 992px) {
+	.as_header_catalog_btn {
+		display: none;
+	}
+    .as_burger {
+        display: flex; 
+    }
+}

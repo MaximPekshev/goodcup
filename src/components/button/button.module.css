@@ -1,0 +1,11 @@
+button {
+    align-items: center;
+}
+button svg {
+    width: 10px;
+    height: 10px;
+}
+
+button div:nth-child(1) {
+    display: flex;
+}
