@@ -1,5 +1,6 @@
 import logo from '../../assets/img/logo.svg';
 import sprite from '../../assets/img/icons/sprites/sprite.svg';
+import { NavLink } from 'react-router';
 
 export const Header = () => {
     return (
@@ -33,7 +34,8 @@ export const Header = () => {
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="#">О компании</a>
+                                    <NavLink to="/about">О компании</NavLink>
+                                    {/* <a href="#">О компании</a> */}
                                 </li>
                                 <li>
                                     <a href="#">Нанесение логотипов</a>
@@ -49,9 +51,9 @@ export const Header = () => {
                     </div>
                     <div className="header_bottom">
                         <div className="logo">
-                            <a href="#">
+                            <NavLink to="/">
                                 <img src={logo} alt="Goodcup" />
-                            </a>
+                            </NavLink>
                         </div>
                         <button className="header_catalog_btn" type="button" alt="Каталог">
                             <svg className="normal">

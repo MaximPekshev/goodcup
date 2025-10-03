@@ -1,5 +1,6 @@
 import paycard_logos from '../../assets/img/paycard_logos.svg';
 import logo from '../../assets/img/logo.svg';
+import { NavLink } from 'react-router';
 export const Footer = () => {
     return (
         <footer className="footer bg_light">
@@ -7,9 +8,9 @@ export const Footer = () => {
                 <div className="footer_wrapper">
                     <div className="footer_top">
                         <div className="column">
-                            <a className="logo" href="#">
+                            <NavLink to="/">
                                 <img src={logo} alt="Goodcup" />
-                            </a>
+                            </NavLink>
                             <div className="footer_contacts">
                                 <a href="tel:+880055519608">8 (800) 551-96-08</a>
                                 <a href="mailto:market@goodcup.ru">market@goodcup.ru</a>
@@ -48,7 +49,7 @@ export const Footer = () => {
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="#">О компании</a>
+                                        <NavLink to="/about">О компании</NavLink>
                                     </li>
                                     <li>
                                         <a href="#">Доставка и оплата</a>
