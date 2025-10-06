@@ -53,6 +53,7 @@ export const Map = () => {
                         <p>Москва, р-он Восточный, Главная улица, 29</p>
                     </div>
                 </div>
+                <div id="contact_map"></div>
             </div>
         </div>
     );
