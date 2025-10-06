@@ -86,7 +86,7 @@ export const Footer = () => {
                             <p className="copyright">© 2010 – 2024, «ГУДКАП» </p>
                         </div>
                         <div className="bottom_item">
-                            <a href="#" target="_blank">Политика конфиденциальности</a>
+                            <NavLink to="/privacy" target='_blank'>Политика конфиденциальности</NavLink>
                         </div>
                         <div className="bottom_paycard_logos">
                             <img style={{ maxWidth: '250px', height: 'auto' }} src={paycard_logos} alt="paycard_logos" />

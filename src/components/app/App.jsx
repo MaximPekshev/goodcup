@@ -3,6 +3,7 @@ import { HomePage } from '../../pages/homePage';
 import { AboutPage } from '../../pages/aboutPage';
 import { PaymentDeliveryPage } from '../../pages/paymentDeliveryPage';
 import { ContactsPage } from '../../pages/contactsPage';
+import { PrivacyPage } from '../../pages/privacyPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { ConfigProvider } from 'antd';
 import './main.css';
@@ -32,6 +33,7 @@ export const App = () => {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/delivery" element={<PaymentDeliveryPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
           </Route>
         </Routes>
       </BrowserRouter>
