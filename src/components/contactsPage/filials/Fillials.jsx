@@ -1,29 +1,29 @@
 import sprite from '../../../assets/img/icons/sprites/sprite.svg';
 export const Fillials = () => {
     return (
-        <div class="contacts_branches bg_light">
-            <div class="container">
+        <div className="contacts_branches bg_light">
+            <div className="container">
                 <h2>Филиалы</h2>
-                <div class="contacts_branches_wrapper">
-                    <div class="highlight_block">
-                        <h3 class="title">6 городов</h3>
-                        <div class="info">
+                <div className="contacts_branches_wrapper">
+                    <div className="highlight_block">
+                        <h3 className="title">6 городов</h3>
+                        <div className="info">
                             <p>Каждый филиал оборудован собственным складом, что обеспечивает быструю обработку заказов и минимизацию сроков доставки.</p>
                         </div>
                     </div>
-                    <table class="contacts_branches_list">
+                    <table className="contacts_branches_list">
                         <tbody>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Белгород</h4>
+                                    <h4 className="title">Белгород</h4>
                                 </td>
                                 <td>
-                                    <div class="address">Россия, г. Москва, 
+                                    <div className="address">Россия, г. Москва, 
                                         <br />Спортивная ул., д. 9 кв.190
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
@@ -31,17 +31,17 @@ export const Fillials = () => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Москва</h4>
+                                    <h4 className="title">Москва</h4>
                                 </td>
                                 <td>
-                                    <div class="address">Россия, г. Москва, 
+                                    <div className="address">Россия, г. Москва, 
                                         <br />Спортивная ул., д. 9 кв.190
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
@@ -49,17 +49,17 @@ export const Fillials = () => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Рязань</h4>
+                                    <h4 className="title">Рязань</h4>
                                 </td>
                                 <td>
-                                    <div class="address">г. Санкт-Петербург, 
+                                    <div className="address">г. Санкт-Петербург, 
                                         <br />Вешняковская ул, 18А
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
@@ -67,17 +67,17 @@ export const Fillials = () => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Курск</h4>
+                                    <h4 className="title">Курск</h4>
                                 </td>
                                 <td>
-                                    <div class="address">Россия, г. Москва, 
+                                    <div className="address">Россия, г. Москва, 
                                         <br />Спортивная ул., д. 9 кв.190
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
@@ -85,17 +85,17 @@ export const Fillials = () => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Воронеж</h4>
+                                    <h4 className="title">Воронеж</h4>
                                 </td>
                                 <td>
-                                    <div class="address">г. Санкт-Петербург, 
+                                    <div className="address">г. Санкт-Петербург, 
                                         <br />Вешняковская ул, 18А
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
@@ -103,17 +103,17 @@ export const Fillials = () => {
                                     </div>
                                 </td>
                             </tr>
-                            <tr class="contacts_branches_item">
+                            <tr className="contacts_branches_item">
                                 <td>
-                                    <h4 class="title">Батайск</h4>
+                                    <h4 className="title">Батайск</h4>
                                 </td>
                                 <td>
-                                    <div class="address">г. Санкт-Петербург, 
+                                    <div className="address">г. Санкт-Петербург, 
                                         <br />Вешняковская ул, 18А
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="contacts_branches_item_time">
+                                    <div className="contacts_branches_item_time">
                                         <svg width="15" height="15">
                                             <use xlinkHref={`${sprite}#clock`}></use>
                                         </svg>
