@@ -52,13 +52,13 @@ export const Footer = () => {
                                         <NavLink to="/about">О компании</NavLink>
                                     </li>
                                     <li>
-                                        <a href="#">Доставка и оплата</a>
+                                        <NavLink to="/delivery">Доставка и оплата</NavLink>
                                     </li>
                                     <li>
                                         <a href="#">Поставщикам</a>
                                     </li>
                                     <li>
-                                        <a href="#">Контакты</a>
+                                        <NavLink to="/contacts">Контакты</NavLink>
                                     </li>
                                     <li>
                                         <a href="#">Правила продажи</a>

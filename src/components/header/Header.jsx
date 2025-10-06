@@ -35,16 +35,15 @@ export const Header = () => {
                             <ul>
                                 <li>
                                     <NavLink to="/about">О компании</NavLink>
-                                    {/* <a href="#">О компании</a> */}
                                 </li>
                                 <li>
                                     <a href="#">Нанесение логотипов</a>
                                 </li>
                                 <li>
-                                    <a href="#">Оплата и доставка</a>
+                                    <NavLink to="/delivery">Оплата и доставка</NavLink>
                                 </li>
                                 <li>
-                                    <a href="#">Контакты</a>
+                                    <NavLink to="/contacts">Контакты</NavLink>
                                 </li>
                             </ul>
                         </nav>
