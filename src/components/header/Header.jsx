@@ -1,13 +1,19 @@
 import logo from '../../assets/img/logo.svg';
 import sprite from '../../assets/img/icons/sprites/sprite.svg';
 import { NavLink } from 'react-router';
+import { MobileMenu } from '../mobile_menu/MobileMenu';
+import { useState } from 'react';
 
 export const Header = () => {
+    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const toggleMobileMenu = () => {
+        setMobileMenuOpen(!isMobileMenuOpen);
+    };
     return (
         <header className="header">
             <div className="container">
                 <div className="header_wrapper">
-                    <button className="burger" type="button">
+                    <button className="burger" type="button" onClick={() => toggleMobileMenu()}>
                         <svg className="normal">
                             <use xlinkHref={`${sprite}#catalog_E`}></use>
                         </svg>
@@ -107,6 +113,10 @@ export const Header = () => {
                     
                 </div>
             </div>
+            <MobileMenu 
+                isOpen={isMobileMenuOpen} 
+                onClose={() => {toggleMobileMenu();}} 
+            />
         </header>    
     );
 }
