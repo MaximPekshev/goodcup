@@ -25,6 +25,9 @@ export const MobileMenu = ({ isOpen, onClose }) => {
                 </div>
                 <div className="header_mobile_menu_wrapper">
                     <div className="header_mobile_menu_center">
+                        <NavLink onClick={onClose} to="/catalog">
+                            <span>Каталог</span>
+                        </NavLink>
                         <NavLink onClick={onClose} to="/about">
                             <span>О компании</span>
                         </NavLink>

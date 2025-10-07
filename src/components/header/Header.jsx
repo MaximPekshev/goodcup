@@ -40,10 +40,10 @@ export const Header = () => {
                         <nav>
                             <ul>
                                 <li>
-                                    <NavLink to="/about">О компании</NavLink>
-                                </li>
+                                    <NavLink to="/catalog">Каталог</NavLink>
+                                </li>    
                                 <li>
-                                    <a href="#">Нанесение логотипов</a>
+                                    <NavLink to="/about">О компании</NavLink>
                                 </li>
                                 <li>
                                     <NavLink to="/delivery">Оплата и доставка</NavLink>
