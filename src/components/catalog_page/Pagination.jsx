@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import styles from './pagination.module.css';
 import { useSearchParams } from "react-router";
 import { useGetProductsQuery } from "../../redux/services/api";
+import { PaginationSkeleton } from "./PaginationSkeleton";
 
 export const Pagination = () => {
 
@@ -46,11 +47,13 @@ export const Pagination = () => {
         }
     }, [isLoading, error, page, totalPages]);
 
+
     if ( isLoading || isFetching ) {
-        return null;
+        return <PaginationSkeleton />;
     };
 
     return (
+        <>
         <div className="pagination">
             <Button
                 className={"prev"}
@@ -111,5 +114,6 @@ export const Pagination = () => {
                 iconName={"arrow-right"}
             />
         </div>
+        </>
     );
 }
