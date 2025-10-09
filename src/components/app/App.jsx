@@ -7,6 +7,8 @@ import { PrivacyPage } from '../../pages/privacyPage';
 import { CatalogPage } from '../../pages/catalogPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { ConfigProvider } from 'antd';
+import { store } from '../../redux/store';
+import { Provider } from 'react-redux';
 import './main.css';
 
 export const App = () => {
@@ -28,16 +30,18 @@ export const App = () => {
       }}
     >
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/delivery" element={<PaymentDeliveryPage />} />
-            <Route path="/contacts" element={<ContactsPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/catalog" element={<CatalogPage />} />
-          </Route>
-        </Routes>
+        <Provider store={store}>
+          <Routes>  
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/delivery" element={<PaymentDeliveryPage />} />
+              <Route path="/contacts" element={<ContactsPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/catalog" element={<CatalogPage />} />
+            </Route>
+          </Routes>
+        </Provider>
       </BrowserRouter>
     </ConfigProvider>
   );

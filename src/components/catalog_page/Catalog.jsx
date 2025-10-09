@@ -2,7 +2,16 @@ import { Breadcrumbs } from "../breadcrumbs/Breadcrumbs";
 import { CatalogHeader } from "./CatalogHeader";
 import { Card } from "./Card";
 import { Button } from "../button/Button";
+import { useGetProductsQuery } from "../../redux/services/api";
+import { useSearchParams } from "react-router";
 export const Catalog = () => {
+    const page = useSearchParams()[0].get('page') || 1;
+    const { data: sampleGoods, error, isLoading } = useGetProductsQuery(page);
+    const count = sampleGoods?.count || 0;
+
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error loading products</div>;
+
     return (
         <>
             <Breadcrumbs
@@ -17,17 +26,11 @@ export const Catalog = () => {
                 <hr />
                 <div className="catalog_wrapper">
                     <div className="cards_grid">
-                        <Card />
-                        <Card />
-                        <Card />
+                        {sampleGoods.goods.map((item) => (
+                            <Card key={item.id} {...item} />
+                        ))}
                     </div>
                 </div>
-                <Button 
-                    className={"btn_main mx-a more"}
-                    children={"Показать еще"}
-                    onClick={() => {console.log('click Показать еще');}}
-                    iconName={"arrow-right"}
-                />
                 <div className="pagination">
                     <Button
                         className={"prev"}
