@@ -6542,6 +6542,7 @@ fieldset.checkbox a:hover {
   background-color: #f5f5f5;
   color: #7d7d7d;
   transition: all 250ms ease-in-out;
+  cursor: pointer;
 }
 
 .pagination .prev:hover,
@@ -6555,14 +6556,6 @@ fieldset.checkbox a:hover {
 .pagination .next svg {
   width: 5px;
   height: 9px;
-}
-
-.pagination .prev {
-  margin-right: 35px;
-}
-
-.pagination .next {
-  margin-left: 35px;
 }
 
 .pagination .pagination__item {
