@@ -13,8 +13,6 @@ export const Card = (item) => {
                 <div className="prod_card_img">
                     <img src={cardImg} alt={item.name} />
                 </div>
-            </div>
-            <div className="prod_card_body">
                 <div className="prod_card_status">
                     {item.balance > 0 && 
                         <div className="prod_card_status_item">
@@ -33,6 +31,9 @@ export const Card = (item) => {
                     <h3 className="prod_card_title">{item.name}</h3>
                     <p className="prod_card_desc">{ item.description }</p>
                 </div>
+            </div>
+            <div className="prod_card_body">
+                
                 <div className="prod_card_bottom">
                     <div className="prod_card_price">
                         <div className="price">

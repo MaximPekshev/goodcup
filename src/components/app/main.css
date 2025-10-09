@@ -6018,6 +6018,7 @@ fieldset.checkbox a:hover {
   border-radius: 14px 14px 20px 20px;
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   transition: box-shadow 0.3s ease-in-out;
   text-decoration: none;
@@ -6129,13 +6130,14 @@ fieldset.checkbox a:hover {
   gap: 20px;
 }
 
-.prod_card .prod_card_body .prod_card_text {
+.prod_card .prod_card_text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0px 20px;
 }
 
-.prod_card .prod_card_body .prod_card_title {
+.prod_card .prod_card_title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
@@ -6143,7 +6145,7 @@ fieldset.checkbox a:hover {
   margin: 0;
 }
 
-.prod_card .prod_card_body .prod_card_desc {
+.prod_card  .prod_card_desc {
   font-weight: 400;
   font-size: 12px;
   color: #333;
@@ -6453,6 +6455,7 @@ fieldset.checkbox a:hover {
   align-items: center;
   gap: 7px;
   line-height: 1;
+  padding: 10px 20px;
 }
 
 .prod_card_status_item i {
@@ -10455,19 +10458,19 @@ fieldset.checkbox a:hover {
   }
 
   .prod_card .prod_card_body {
-    padding: 20px 0 0;
+    padding: 20px 10px;
     gap: 15px;
   }
 
-  .prod_card .prod_card_body .prod_card_text {
+  .prod_card .prod_card_text {
     gap: 5px;
   }
 
-  .prod_card .prod_card_body .prod_card_title {
+  .prod_card .prod_card_title {
     font-size: 14px;
   }
 
-  .prod_card .prod_card_body .prod_card_desc {
+  .prod_card .prod_card_desc {
     font-size: 10px;
     line-height: 1.4;
   }
@@ -10484,9 +10487,9 @@ fieldset.checkbox a:hover {
     font-size: 12px;
   }
 
-  .prod_card .prod_card_body .prod_card_bottom .prod_card_action {
+  /* .prod_card .prod_card_body .prod_card_bottom .prod_card_action span {
     display: none;
-  }
+  } */
 
   .prod_card_mini {
     --card-px: 10px;
@@ -11139,6 +11142,12 @@ fieldset.checkbox a:hover {
   .dialog p {
     font-size: 14px;
   }
+  .prod_card_status_item { 
+    padding: 10px;
+  }
+  .prod_card .prod_card_text {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -11521,5 +11530,9 @@ fieldset.checkbox a:hover {
 
   .swiper-main img {
     width: 100%;
+  }
+
+   .prod_card .prod_card_body .prod_card_bottom .prod_card_action span {
+    display: none;
   }
 }
