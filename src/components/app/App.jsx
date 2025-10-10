@@ -5,6 +5,7 @@ import { PaymentDeliveryPage } from '../../pages/paymentDeliveryPage';
 import { ContactsPage } from '../../pages/contactsPage';
 import { PrivacyPage } from '../../pages/privacyPage';
 import { CatalogPage } from '../../pages/catalogPage';
+import { ProductPage } from '../../pages/productPage';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import { ConfigProvider } from 'antd';
 import { store } from '../../redux/store';
@@ -24,7 +25,6 @@ export const App = () => {
             dotWidth: 35,
             dotGap: 6,
             dotHeight: 6,
-
           },
         },
       }}
@@ -38,7 +38,10 @@ export const App = () => {
               <Route path="/delivery" element={<PaymentDeliveryPage />} />
               <Route path="/contacts" element={<ContactsPage />} />
               <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="/catalog" element={<CatalogPage />} />
+              <Route path="/catalog">
+                <Route index element={<CatalogPage />} />
+                <Route path=":slug" element={<ProductPage />} />
+              </Route>
             </Route>
           </Routes>
         </Provider>

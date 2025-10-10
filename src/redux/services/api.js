@@ -8,9 +8,13 @@ export const api = createApi({
         getProducts: builder.query({
             query: (page) => `/good/?page=${page}`,
         }),
+        getProduct: builder.query({
+            query: (slug) => `/good/${slug}/`,
+        }),
     }),
 });
 
 export const { 
     useGetProductsQuery, 
+    useGetProductQuery,
 } = api;

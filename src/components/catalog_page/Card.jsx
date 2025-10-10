@@ -1,9 +1,9 @@
 import sprite from '../../assets/img/icons/sprites/sprite.svg';
 import cardImg from '../../materials/img/catalog/0.jpg';
-import { Button } from '../button/Button';
+import { NavLink } from 'react-router'; 
 export const Card = (item) => {
     return (
-        <a className="prod_card" href="#">
+        <NavLink className="prod_card" to={`/catalog/${item.slug}`}>
             <div className="prod_card_header">
                 <button className="prod_card_like">
                     <svg>
@@ -50,6 +50,6 @@ export const Card = (item) => {
                     </div>
                 </div>
             </div>
-        </a>
+        </NavLink>
     );
 }

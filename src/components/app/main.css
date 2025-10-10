@@ -8911,10 +8911,14 @@ fieldset.checkbox a:hover {
   flex-direction: row;
   gap: 15px;
   border-radius: 15px;
-  padding: 2px 19px 2px 2px;
+  /* padding: 2px 19px 2px 2px; */
   font-size: 14px;
   min-height: 44px;
   font-weight: 400;
+}
+.prodcard_detail .add_to_cart svg {
+  width: 18px;
+  height: 19px;
 }
 
 .prodcard_detail .add_to_cart:hover,
@@ -11503,10 +11507,10 @@ fieldset.checkbox a:hover {
     margin-right: auto;
   }
 
-  .prodcard_detail .add_to_cart > svg,
+  /* .prodcard_detail .add_to_cart > svg,
   .prodcard_detail_modal .add_to_cart > svg {
     margin-right: auto;
-  }
+  } */
 
   .prodcard_detail .buy_now,
   .prodcard_detail_modal .buy_now {

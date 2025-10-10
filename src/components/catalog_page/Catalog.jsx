@@ -17,7 +17,6 @@ export const Catalog = () => {
                 <CatalogHeader />
                 <hr />
                 <div className="container">
-                    <h1>Каталог</h1>
                     <CatalogWrapper />
                 </div>
                 <Pagination />
